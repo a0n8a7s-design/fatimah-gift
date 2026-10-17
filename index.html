@@ -1,1 +1,106 @@
 # fatimah-gift
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إلى فطومتي 🎁</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;min-height:100vh;display:grid;place-items:center;
+ padding:20px;font-family:Tahoma,Arial,sans-serif;
+ background:linear-gradient(135deg,#ffe0ec,#eee6ff);
+ color:#654158;text-align:center
+}
+.card{
+ width:100%;max-width:460px;background:#ffffffed;
+ padding:28px 22px;border-radius:28px;
+ box-shadow:0 12px 40px #8d527322
+}
+h1{color:#c34d83;font-size:29px}
+p{line-height:2;font-size:17px}
+.emoji{font-size:55px}
+button{
+ border:0;border-radius:30px;padding:14px 22px;
+ margin:8px;background:#e76ba0;color:white;
+ font-size:17px;font-weight:bold;cursor:pointer
+}
+.hidden{display:none}
+.note{
+ background:#fff2f8;border-radius:18px;padding:15px;margin:15px 0
+}
+.small{font-size:13px;color:#9a8191}
+</style>
+</head>
+<body>
+<main class="card">
+
+<section id="one">
+<div class="emoji">🎁</div>
+<p class="small">إشعار رسمي وخطير للغاية 😂</p>
+<h1>إلى فطومتي العزيزة 💗</h1>
+<p>
+وصلتكِ هدية إلكترونية مختومة بختم الدلع،
+وممنوع فتحها دون ابتسامة!
+</p>
+<p>هل أنتِ مستعدة للمفاجأة؟ 👀</p>
+<button onclick="show('two')">افتحي الهدية 🎀</button>
+</section>
+
+<section id="two" class="hidden">
+<div class="emoji">🦆🎉</div>
+<h1>وقعتِ في الفخ يا فطومتي!</h1>
+<p>بعد بحث طويل اكتشفنا أن محتويات الهدية هي:</p>
+<div class="note">
+<p>🍓 ٣٠٪ دلع بلا حدود</p>
+<p>😂 ٤٠٪ ضحك بلا سبب</p>
+<p>🦆 ٣٠٪ بطّة ضائعة لا تعرف قصتها</p>
+</div>
+<p>لكن انتظري... هذه ليست المفاجأة الأخيرة.</p>
+<button onclick="show('three')">المفاجأة الأخيرة؟ 🤍</button>
+</section>
+
+<section id="three" class="hidden">
+<div class="emoji">🌷🌙</div>
+<h1>فطومتي... لحظة صدق</h1>
+<p>حسنًا، انتهى المزاح، وبقيت كلمة من القلب.</p>
+<div class="note">
+<p>اتفقنا أن نفترق، ولكلٍّ منا طريقه الذي سيمضي فيه.</p>
+<p>
+لم أصنع هذه الهدية لأغيّر اتفاقنا،
+ولا لأحمّلكِ عتابًا أو انتظارًا لردّ،
+بل أردت أن يكون الوداع ذكرى لطيفة
+تليق بالأيام التي عرفنا فيها بعضنا.
+</p>
+<p>
+شكرًا لكل ضحكة، ولكل حديث جعل يومًا عاديًا
+أجمل قليلًا، ولكل لحظة صادقة كانت بيننا.
+</p>
+<p>
+قد تنتهي الحكايات، لكن ليس من الضروري
+أن ننكر جمالها لأنها انتهت.
+</p>
+<p>
+أتمنى لكِ أيامًا سعيدة، وقلبًا مطمئنًا،
+وأحلامًا تجد طريقها إلى النور.
+</p>
+<h3>وداعًا يا فطومتي، كوني بخير دائمًا. 🤍</h3>
+</div>
+<p class="small">بعض الذكريات يكفيها أن تبقى جميلة.</p>
+</section>
+
+</main>
+<script>
+function show(id){
+ document.querySelectorAll('main section').forEach(
+  section=>section.classList.add('hidden')
+ );
+ document.getElementById(id).classList.remove('hidden');
+ window.scrollTo(0,0);
+}
+</script>
+</body>
+  </html>
+  
